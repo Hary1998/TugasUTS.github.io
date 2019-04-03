@@ -1,0 +1,303 @@
+ <html>
+    <link rel= "shortcut icon" href="favicon.ico">
+<head>
+    <title>Hary Budi S
+    </title>
+    <meta name="viewport" content="width=device-width, initialscale=1">
+    <style>
+            .container{
+                background: #e5e5e5;
+                width: 100%;
+                grid-template-columns: 1fr 1fr 1fr 1fr fr;
+                grid-template-rows: 30px ;
+                grid-gap: 0px;
+            }
+            .topbar {
+                height: auto;
+                width: auto;
+                background: #333;
+                grid-row-start: 1;
+                grid-column-start: 1;
+                grid-column-end: 6;
+            }
+            .navbar{
+                width: 100%;
+                background: black;
+                grid-row-start: 2;
+                grid-column-start: 1;
+                grid-column-end: 6;
+            }
+            body {margin: 0;}
+            ul.navbar {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            }
+            ul.navbar li {float: left;}
+            ul.navbar li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+            ul.navbar li a:hover:not(.active) {background-color: lightseagreen;}
+            ul.navbar li a.active {background-color: lightseagreen;}
+            ul.navbar li.right {float: right;}
+            @media screen and (max-width: 600px) {
+            ul.navbar li.right,
+            ul.navbar li {float: none;}
+            }
+/* SLIDER DESIGN */
+            .slider{
+            grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            margin-top: 20px;             
+            width: auto;
+            height: auto;
+            }
+            
+@keyframes slider {
+	0%{
+		left:0;
+	}
+	20%{
+		left:0;
+	}
+	25%{
+		left:-100%;
+	}
+	45%{
+		left:-100%;
+	}
+	50%{
+		left:-200%;
+	}
+	70%{
+		left:-200%;
+	}
+	75%{
+		left:-300%;
+	}
+	95%{
+		left:-300%;
+	}
+	100%{
+		left:-400%;
+	}
+}
+
+.slider {
+	overflow:hidden;
+}
+.slider figure img{
+	width:20%;
+	float:left;
+}
+.slider figure{
+	position: relative;
+	width: 500%;
+	margin:0;
+	left:0;
+	animation:15s slider infinite;
+}
+
+/* SLIDER DESIGN */
+            
+            .konten {
+            overflow: hidden;
+            max-width: 97%;
+            grid-row-start: 4;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            margin: 20px auto;             
+            height: auto;
+            }
+            
+            .kontenA {
+            
+            margin: 22px;
+            padding: 27px;
+            float: left;
+            width: 250px;
+            background: lightseagreen;
+            }
+
+            .kontenB {
+
+            margin: 22px;
+            padding: 25px;
+            float: left;
+            width: 500px;
+            background: lightgrey;
+            }
+
+            .kontenC {
+            
+            margin: 22px;
+            padding: 25px;
+            float: left;
+            width: 250px;
+            background: lightgrey;
+            }
+/*  RESPONSIVE IMAGE */
+            .topbar1  {
+                background: lightseagreen;
+                max-width: 100%;
+                height: auto;
+                margin: 0px;
+                padding: 10px;
+            }
+
+            .topbar1 img {
+                width: 94px;
+            }
+            @media (max-width: 1024px) {
+                .topbar1 img {
+                    width: 94px;
+                }
+            }
+            @media (max-width: 800px) {
+                .topbar1 img {
+                    width: 85px;
+                }
+            }
+            @media (max-width: 768px) {
+                .topbar1 img {
+                    width: 70px;
+                }
+            }
+            
+            .kontenA {
+                max-width: 100%;
+                height: auto;
+            }
+/*  RESPONSIVE IMAGE */
+
+/* ..........kolom tablet/hp */
+    @media screen and (max-width: 1080px) {
+	
+	.konten {
+		width: 100%;
+	}
+	.kontenA {
+		width: 25%;
+	}
+	.kontenB {
+		width: 68%;
+		float: right;
+	}
+	
+	.kontenC {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+}
+    
+    
+    @media screen and (max-width: 780px) {
+	
+	.kontenA {
+		width: auto;
+		float: none;
+	}
+	
+	.kontenB {
+		width: auto;
+		float: none;
+	}
+	
+	.kontenC {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* dua kolom */
+            .fotter {
+            bottom: 0px;
+            background: #333;
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            width: auto;
+            height: auto;
+            }
+            .fot {
+            grid-row-start: 5;
+            grid-column-start: 1;
+            grid-column-end: 6;
+            padding: 5px;
+            margin-left: 10px;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar"> <font face="arial" size=2pt color="white"> <b> 
+            <marquee direction="right" loop="1000"> WOLCOME TO COUNTRY +62 </b> </font> </marquee> 
+            <div class='topbar1'> 
+                <img src="imgslider/ph.png"> 
+            </div>
+        </div>
+
+        <div class='navbar'>
+            <nav>
+                <ul class="navbar">
+                    <li> <a class="active" href="index.html"> ABOUT ME </a> </li>
+                    <li> <a href="Hobby.html"> HOBBY & ENTHUSIAST </a> </li>
+                    <li> <a href="gallery.html"> GALLERY </a> </li>
+                    <li> <a href="artikel.html"> ARTICLE </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class='slider'>
+            <figure>
+                <img src="imgslider/1.jpg" alt>
+                <img src="imgslider/2.jpg" alt>
+                <img src="imgslider/3.jpg" alt>
+                <img src="imgslider/4.jpg" alt>
+                <img src="imgslider/1.jpg" alt>
+    
+            </figure>
+        </div>
+
+        <div class="konten" >
+                <div class='kontenA' align=center> <font face="Arial" size=2pt color="black"> 
+                    <img src="imgslider/fot1.png">
+                
+                <p align=center> <b> Design </b> </p> <p align=justify> Di website ini kami juga membuka jasa untuk membuat berbagai macam design produk yang diinginkan 
+                seperti kaos, kemeja, jaket, Name Tag, Kop surat dll. tidak hanya berupa design saja untuk yang ingin
+                wajahnya ingin dilukis dikertas kanvas kami juga buka jasa pelukisan wajah. jika anda berminat silahkan
+                hubungi kontak dibagian bawah atau bisa lewat media sosial kami. Jika ingin melihat beberapa hasil design 
+                yang kami buat bisa cek di <i> Gallery </i> kami, disitu juga ada hasil lukisan wajah yg kami buat dan jangan lupa 
+                follow media sosial kami dan ajak teman-teman kalian untuk melihat-lihat desain kami. Terima kasih...... </div>
+
+                <div class='kontenB' align=center> <font face="Arial" size=2pt color="black"> 
+                    <img src="imgslider/Dunia.jpg"> 
+                <p align=center> <b> Profile </b> </P> <p align=justify> <font size=2pt> Saya adalah seorang laki-laki yang lahir di tanggal 4 september 1998, di berinama Hary Budi Setiawan.
+                lahir di kota tangerang, saat ini saya masih berkuliah di perguruan tinggi LEPISI dengan jurusan "TEKNIK INFORMATIKA". maupun saya Berkuliah di jurusan TI saya juga sangat antusias dengan 
+                dunia seni seperti Realistic drawing face atau yg berhubungan dengan menggambar. kuliah saya sekarang saya lebih menyukai mata kuliah yang berhubungan dengan design walaupun
+                saya juga tertarik dengan bahasa program. di website ini saya menampilkan hasil design-desing saya selama kuliah dan juga saya akan menampilkan hasil-hasil karya Realistic drawing face yang
+                saya buat. Jika ingin melihat hasil design klik <a class="active" href="gallery.html"> ...GALLERY  </a>  </div>
+                
+                <div class='kontenC' align=center> <font face="Arial" size=2pt color="black"> 
+                    <img src="imgslider/Open1.jpg">
+                <p align=center> Semi Open-World Action RPG </p> <p align=justify> <font face="Arial" size=2pt color="black"> Menyebut seri terbaru God of War ini sekedar sebagai game "action" saja sepertinya sudah tidak berlaku lagi. Seperti yang kita tahu, seri lawas God of War adalah sebuah game yang memang memungkinkan Anda untuk memperkuat Kratos, terutama di sisi senjata. Semakin kuat senjata, semakin besar damage yang mampu ia hasilkan, semakin efektif pula aksi Anda di pertempuran. Namun konsep tersebut berhenti sampai di sana. Sony Santa Monica menawarkan konsep serupa namun dalam kapasitas yang lebih luas, sebuah gameplay yang kini jauh lebih menyerupai game action RPG daripada sebuah game action belaka. </div>
+        </div>
+
+        <div class="fotter"> 
+            <div class='fot' align=left> <font face="Arial" color="white"> <p> Copyright©2019.Warga+62 </p> <p> HaryBudiS. </p> <p> Phone: +62 812 - 9761 - 5396 </p> <p> IG : @manga_draw20 </p> 
+            <p> Facebook : HaryBBX </p>
+            </div>
+        </div>    
+</body>
+</html>
